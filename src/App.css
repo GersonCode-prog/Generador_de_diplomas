@@ -1,0 +1,146 @@
+/* Contenedor principal del generador de diplomas */
+.diploma-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.inputs-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos mejorados para el diploma */
+.diploma {
+  position: relative;
+  width: 900px;
+  padding: 30px 60px 120px; /* Ajustado padding inferior a 120px para la firma */
+  margin: 30px auto; /* Margen ajustado para centrar mejor */
+  border: 12px solid #D4AF37; /* Borde dorado más grueso */
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+  font-family: 'Georgia', serif;
+}
+
+/* Detalles para las cintas decorativas */
+.ribbon, .ribbon-bottom {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #E74C3C, #C0392B); /* Gradiente de color */
+  transform: rotate(-45deg);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35); /* Sombra más pronunciada */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+.ribbon {
+  top: -30px; /* Mover la cinta superior más arriba */
+  left: -30px; /* Mover la cinta superior más a la izquierda */
+}
+
+.ribbon-bottom {
+  bottom: -30px; /* Mover la cinta inferior más abajo */
+  right: -30px; /* Mover la cinta inferior más a la derecha */
+}
+
+.diploma h1 {
+  font-size: 40px; /* Tamaño del título ajustado */
+  margin-bottom: 10px; /* Espacio debajo del título ajustado */
+  color: #2C3E50; /* Color gris oscuro */
+  font-weight: bold;
+}
+
+.diploma h2.recipient-name {
+  font-size: 34px; /* Tamaño del nombre ajustado */
+  margin-top: 10px; /* Espacio entre el título y el nombre */
+  color: #2980B9; /* Color azul oscuro */
+  font-style: italic; /* Letra cursiva */
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Efecto sutil de sombra */
+}
+
+.diploma p {
+  font-size: 18px; /* Tamaño de fuente ajustado */
+  margin-top: 10px;
+  color: #7F8C8D; /* Color gris claro */
+}
+
+.diploma .description {
+  margin-top: 20px; /* Espacio entre el nombre y la descripción ajustado */
+  font-size: 24px; /* Tamaño de fuente ajustado */
+  font-weight: bold;
+  color: #2C3E50; /* Color gris oscuro */
+  padding: 0 60px; /* Relleno ajustado */
+}
+
+/* Firma centrada */
+.diploma .signature-container {
+  position: absolute;
+  bottom: 20px; /* Ajustar la posición desde la parte inferior */
+  left: 50%;
+  transform: translateX(-50%); /* Centramos horizontalmente */
+  width: 100%;
+  text-align: center; /* Alineación centrada */
+  padding: 0 20px; /* Añadir padding para evitar que la firma se quede pegada a los bordes */
+}
+
+.diploma .signature {
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  color: #333; /* Color oscuro para la firma */
+  font-family: 'Cursive', sans-serif;
+  margin-top: 20px; /* Espacio adicional arriba de la firma */
+}
+
+/* Espacio reservado para la firma física */
+.signature-line {
+  display: block;
+  border-top: 2px solid #333; /* Línea de firma más prominente */
+  width: 300px;
+  margin: 20px auto 0; /* Espacio superior y alineación centrada */
+}
+
+/* Botón para generar el PDF */
+.generate-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #27AE60; /* Color verde oscuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+  background-color: #2ECC71; /* Color verde claro al pasar el ratón */
+}
+
+/* Estilo para mejorar el relleno de los datos */
+.diploma-content {
+  margin-top: 40px; /* Espacio superior ajustado */
+}
+
+.diploma-content p {
+  font-size: 20px;
+  color: #2C3E50; /* Color gris oscuro */
+  line-height: 1.5;
+}
+
+/* Estilo para la fecha */
+.diploma .date {
+  font-size: 18px;
+  color: #95A5A6; /* Color gris claro */
+  margin-top: 20px;
+}
